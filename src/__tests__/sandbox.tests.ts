@@ -1,5 +1,8 @@
+import { add } from "..";
+
 describe("Sandbox tests", () => {
   it("sandbox", () => {
-    expect(1 + 1).toBe(2);
+    expect(add(2, 4)).toBe(6);
+    expect(add(2, 4)).not.toBe(7);
   });
 });
